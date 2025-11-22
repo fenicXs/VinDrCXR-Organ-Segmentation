@@ -1,4 +1,4 @@
-# Swin-UNet Segmentation for CheXmask Dataset
+# Swin-UNet Segmentation for VinDrCXR from CheXmask Dataset
 
 This directory contains a complete implementation of Swin Transformer-based U-Net for chest X-ray segmentation using the CheXmask dataset.
 
