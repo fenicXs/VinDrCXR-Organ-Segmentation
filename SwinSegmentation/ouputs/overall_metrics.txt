@@ -1,0 +1,27 @@
+Overall Metrics
+==================================================
+mean_dice: 0.9667
+dice_class_0: 0.9897
+dice_class_1: 0.9739
+dice_class_2: 0.9664
+dice_class_3: 0.9598
+mean_iou: 0.9357
+iou_class_0: 0.9796
+iou_class_1: 0.9492
+iou_class_2: 0.9350
+iou_class_3: 0.9228
+mean_precision: 0.9558
+precision_class_0: 0.9941
+precision_class_1: 0.9644
+precision_class_2: 0.9540
+precision_class_3: 0.9490
+mean_recall: 0.9779
+recall_class_0: 0.9853
+recall_class_1: 0.9836
+recall_class_2: 0.9792
+recall_class_3: 0.9709
+mean_f1: 0.9667
+f1_class_0: 0.9897
+f1_class_1: 0.9739
+f1_class_2: 0.9664
+f1_class_3: 0.9598
