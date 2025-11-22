@@ -31,14 +31,45 @@ git push origin add-swinsegmentation-export
 # (if this workspace is the repo you want to push to, skip remote add)
 ```
 
-Notes
-- I did not push to your GitHub remote automatically (no auth). Run the commands above locally — Git will prompt for credentials or use your configured SSH key.
-- The exported files have full-line comments removed; the code is functionally unchanged.
+## Notes on Data Usage
 
-Attribution
-- Original implementation: https://github.com/HuCaoFighting/Swin-Unet
-- Dataset and split info from the CheXmask dataset: https://github.com/ngaggion/CheXmask-Database
+- The CheXmask-derived masks remain governed by the CheXmask-Database license. Ensure compliance with the usage restrictions of each underlying dataset (MIMIC-CXR, CheXpert, VinDr-CXR).
+- No raw images are distributed in this repository. Only official metadata tables and curated splits are included.
 
-If you want, I can:
-- create a branch and attempt to push (you will need to supply a personal access token or configure SSH access), or
-- open a pull request from a generated patch file.
+## Citation
+
+If you use the CheXmask dataset assets included or referenced by this repository, please cite the original release:
+
+```
+@misc{gaggion2023chexmaskPhysioNet,
+   author = {Gaggion, N. and Mosquera, C. and Aineseder, M. and Mansilla, L. and Milone, D. and Ferrante, E.},
+   title = {{CheXmask Database: a large-scale dataset of anatomical segmentation masks for chest x-ray images (version 0.1)}},
+   year = {2023},
+   howpublished = {PhysioNet},
+   note = {https://doi.org/10.13026/dx54-8351}
+}
+```
+
+For experiments or derivatives relying on the Swin-Unet implementation, please cite the corresponding publications:
+
+```
+@InProceedings{swinunet,
+   author = {Hu Cao and Yueyue Wang and Joy Chen and Dongsheng Jiang and Xiaopeng Zhang and Qi Tian and Manning Wang},
+   title = {Swin-Unet: Unet-like Pure Transformer for Medical Image Segmentation},
+   booktitle = {Proceedings of the European Conference on Computer Vision Workshops (ECCVW)},
+   year = {2022}
+}
+
+@misc{cao2021swinunet,
+   title = {Swin-Unet: Unet-like Pure Transformer for Medical Image Segmentation},
+   author = {Hu Cao and Yueyue Wang and Joy Chen and Dongsheng Jiang and Xiaopeng Zhang and Qi Tian and Manning Wang},
+   year = {2021},
+   eprint = {2105.05537},
+   archivePrefix = {arXiv},
+   primaryClass = {eess.IV}
+}
+```
+
+## Acknowledgements
+
+This work stands on the shoulders of the CheXmask-Database and Swin-Unet teams. Please cite their publications when publishing results obtained from this workflow.
